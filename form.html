@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Survey Form</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type="text"], input[type="number"], input[type="num"] {
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 3px;
+			border: 1px solid white;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			padding: 10px 20px;
+			background-color: blue;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		input:required {
+			border-color:red ;
+		}
+		input:invalid {
+			border-color: red;
+		}
+	</style>
+</head>
+<body background="https://images.blocksurvey.io/cdn-cgi/imagedelivery/G6cPOuGZ4Z_bEV13gBxixw/template-category/crypto-and-blockchain.svg/l"
+    <h1>Survey Form</h1>
+	<form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+		<fieldset>
+			<legend>Name</legend>
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName" required>
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName" required>
+		</fieldset>
+
+		<fieldset>
+			<legend>Address</legend>
+			<label for="street">Street:</label>
+			<input type="text" id="street" name="street" required>
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" required>
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state" required>
+			<label for="pincode">Pin Code:</label>
+			<input type="number" id="pincode" name="pincode" required>
+		</fieldset>
+
+            <style>
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                input[type="radio"] {
+                    margin-right: 10px;
+                }
+                input[type="submit"] {
+                    padding: 10px 20px;
+                    background-color:blue;
+                    color:white;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            </style>
+        
+                <fieldset>
+                    <legend>Rating</legend>
+                    <label><b>Quality of products received:</b></label>
+                    <input type="radio" id="qualityExcellent" name="quality" value="Excellent" required>
+                    <label for="qualityExcellent">Excellent</label>
+                    <input type="radio" id="qualityGood" name="quality" value="Good">
+                    <label for="qualityGood">Good</label>
+                    <input type="radio" id="qualityBad" name="quality" value="Bad">
+                    <label for="qualityBad">Bad</label>
+        
+                    <label><b>Value for money:</b></label>
+                    <input type="radio" id="valueExcellent" name="value" value="Excellent" required>
+                    <label for="valueExcellent">Excellent</label>
+                    <input type="radio" id="valueGood" name="value" value="Good">
+                    <label for="valueGood">Good</label>
+                    <input type="radio" id="valueBad" name="value" value="Bad">
+                    <label for="valueBad">Bad</label>
+        
+                    <label><b>Delivery:</b></label>
+                    <input type="radio" id="deliveryExcellent" name="delivery" value="Excellent" required>
+                    <label for="deliveryExcellent">Excellent</label>
+                    <input type="radio" id="deliveryGood" name="delivery" value="Good">
+                    <label for="deliveryGood">Good</label>
+                    <input type="radio" id="deliveryBad" name="delivery" value="Bad">
+                    <label for="deliveryBad">Bad</label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="contactNumber">Number:</label>
+                    <input type="number" id="contactNumber" name="contactNumber" required>
+                </fieldset>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
